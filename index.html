@@ -1,0 +1,41 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pyramids</title>
+</head>
+<body>
+    <div class="total">
+    <div class="pyramid" id="pyramid"></div>
+    <div class="controls">
+        <div class="head_top">PYRAMID</div>
+        <div class="rowbuild">
+            <h2>ROWS:</h2>
+            <input type="number" id="rowsInput" placeholder="Rows" value="3" min="1">
+        </div>
+        <div class="colorbar">
+            <h2>COLOR:</h2>
+            <input type="color" id="colorPicker" value="#61dafb">
+        </div>
+        <div class="delaybar">
+            <h2>DELAY:</h2>
+            <input type="number" id="delayInput" placeholder="Delay (ms)" value="500" min="100">
+        </div>
+        <div class="btn_start">
+            <button class="start" id="startButton">Start Animation</button>
+        </div>
+        <div class="btn_stop">
+            <button class="stop" id="stopButton">Stop Animation</button>
+        </div>
+        <div class="btn_restart">
+            <button class="restart" id="restart_Button">Restart</button>
+        </div>
+    </div></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
