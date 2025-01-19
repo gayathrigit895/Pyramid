@@ -129,7 +129,7 @@
 function createPyramid(rows) {
     let maxRows;
     if (window.innerWidth <= 425) {
-        maxRows = 14; 
+        maxRows = 10; 
     } else if (window.innerWidth <= 768) {
         maxRows = 16; 
     } else {
@@ -196,7 +196,7 @@ function updatePyramid() {
     let maxRows;
 
     if (window.innerWidth <= 425) {
-        maxRows = 14;
+        maxRows = 10;
     } else if (window.innerWidth <= 768) {
         maxRows = 16;
     } else {
