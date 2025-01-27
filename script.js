@@ -162,24 +162,24 @@ function startAnimation() {
     const rows = document.querySelectorAll('.row'); 
     const color = document.getElementById('colorPicker').value; 
     const delay = parseInt(document.getElementById('delayInput').value, 10) || 500; 
-    
+    currentRow = 0;
     animationTime = setInterval(() => {
         rows.forEach(row => {
             row.querySelectorAll('.block').forEach(block => block.style.backgroundColor = 'white');
         });
+    if (rows[currentRow]) {
+        rows[currentRow].querySelectorAll('.block').forEach(block => {
+            block.style.backgroundColor = color;
+        });
+    }
 
-        for (let i = 0; i <= currentRow; i++) {
-            rows[i]?.querySelectorAll('.block').forEach(block => block.style.backgroundColor = color);
-        }
-
-        currentRow++;
+    currentRow++;
+       
         if (currentRow >= rows.length) {
             currentRow = 0;
         }
     }, delay);
 }
-
-
 
 function stopAnimation() {
     clearInterval(animationTime);
